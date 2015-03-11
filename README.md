@@ -1,6 +1,6 @@
 #Authenticate to the Sinch Javascript SDK from your PHP Backend
 
-_Shoutout to Rob Holmes from [i6systems.com](http://i6systems.com) for putting together this sample code for us!_
+_Shoutout to [Rob Holmes](https://twitter.com/robholmes) from [i6systems.com](http://i6systems.com) for putting together this sample code for us!_
 
 Define the following class to generate a user ticket to authenticate to the Sinch Javascript SDK:
 
