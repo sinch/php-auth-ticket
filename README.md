@@ -1,8 +1,8 @@
-#Authenticate to the Sinch Javascript SDK from your PHP Backend
+#Authenticate to the Sinch JavaScript SDK From Your PHP Backend
 
 _Shoutout to [Rob Holmes](https://twitter.com/robholmes) from [i6systems.com](http://i6systems.com) for putting together this sample code for us!_
 
-Define the following class to generate a user ticket to authenticate to the Sinch Javascript SDK:
+Define the following class to generate a user ticket to authenticate to the Sinch JavaScript SDK:
 
     class SinchTicketGenerator
     {
@@ -56,12 +56,12 @@ You can use the above class like so:
     $generator = new SinchTicketGenerator('YOUR_APP_KEY', 'YOUR_APP_SECRET');
     $signedUserTicket = $generator->generateTicket('YOUR_USERNAME', new DateTime(), 3600);
     
-"YOUR_USERNAME" is any way you uniquely identify your users, and "3600" is the number of seconds the ticket will expire in.
+"YOUR_USERNAME" is any way you uniquely identify your users, and "3600" is the number of seconds in which the ticket will expire.
 
-If you don't yet have an app key and secret from Sinch, you can get them for free here: [www.sinch.com/signup](https://www.sinch.com/signup)
+If you don't yet have an app key and secret from Sinch, you can get them for free here: [www.sinch.com/signup](https://www.sinch.com/signup).
 
-Once you've successfully generated the ticket, you can use it to securely start the Sinch Client. Follow any of our client-side javascript tutorials to use the Sinch Client to make phone calls and send instant messages:
+Once you've successfully generated the ticket, you can use it to securely start the Sinch client. Follow any of our client-side JavaScript tutorials to use the Sinch client to make phone calls and send instant messages:
 
-- Phone calling [www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls](https://www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls/)
-- App to app calling [www.sinch.com/tutorials/turn-browser-phone-js-sdk](https://www.sinch.com/tutorials/turn-browser-phone-js-sdk/)
-- Instant messaging [www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript](https://www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript/)
+- Phone calling -  [www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls](https://www.sinch.com/tutorials/using-sinch-js-sdk-make-voice-calls/)
+- App-to-app calling - [www.sinch.com/tutorials/turn-browser-phone-js-sdk](https://www.sinch.com/tutorials/turn-browser-phone-js-sdk/)
+- Instant messaging - [www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript](https://www.sinch.com/tutorials/build-instant-messaging-app-sinch-javascript/)
