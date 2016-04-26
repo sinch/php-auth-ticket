@@ -47,7 +47,7 @@ Define the following class to generate a user ticket to authenticate to the Sinc
      
         private function createDigest($data)
         {
-            return trim(hash_hmac('sha256', $data, base64_decode($this->applicationSecret), true));
+            return hash_hmac('sha256', $data, base64_decode($this->applicationSecret), true);
         }
     }
     
